@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Hidden Mystery | Privacy Policy</title>
+    <meta name="description" content="Privacy Policy for Find Hidden Mystery. Learn how we protect your privacy while you enjoy our spot-the-difference puzzle game.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Source+Sans+3:wght@300;400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.8;
+            color: #d1c4e9;
+            background: linear-gradient(160deg, #0c0a1a 0%, #1a1333 30%, #12102b 60%, #0e0b1e 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                radial-gradient(ellipse at 20% 10%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 25%, rgba(251, 191, 36, 0.05) 0%, transparent 45%),
+                radial-gradient(ellipse at 45% 85%, rgba(99, 102, 241, 0.06) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .top-bar {
+            position: relative;
+            z-index: 2;
+            max-width: 860px;
+            margin: 0 auto 20px;
+        }
+
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #a78bfa;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            padding: 10px 18px;
+            border-radius: 12px;
+            background: rgba(139, 92, 246, 0.08);
+            border: 1px solid rgba(139, 92, 246, 0.15);
+            transition: all 0.2s;
+        }
+
+        .back-home:hover {
+            color: #c4b5fd;
+            background: rgba(139, 92, 246, 0.15);
+            text-decoration: none;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 860px;
+            margin: 0 auto;
+            background: rgba(12, 10, 26, 0.93);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 52px 50px;
+            border-radius: 24px;
+            border: 1px solid rgba(139, 92, 246, 0.15);
+            box-shadow:
+                0 25px 70px rgba(0, 0, 0, 0.55),
+                0 0 0 1px rgba(139, 92, 246, 0.06),
+                inset 0 1px 0 rgba(255, 255, 255, 0.03);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 44px;
+            padding-bottom: 32px;
+            border-bottom: 2px solid rgba(139, 92, 246, 0.12);
+        }
+
+        .header-icon {
+            font-size: 52px;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 2.3em;
+            margin-bottom: 8px;
+            font-weight: 800;
+        }
+
+        .header-sub {
+            color: #a78bfa;
+            font-size: 1.05em;
+            font-weight: 500;
+        }
+
+        .effective-date {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 7px 20px;
+            background: rgba(139, 92, 246, 0.08);
+            border: 1px solid rgba(139, 92, 246, 0.18);
+            border-radius: 22px;
+            color: #a78bfa;
+            font-size: 0.88em;
+            font-weight: 500;
+        }
+
+        .highlight-box {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            padding: 24px 30px;
+            margin-bottom: 40px;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(52, 211, 153, 0.04) 100%);
+            border-radius: 18px;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+
+        .highlight-icon {
+            font-size: 40px;
+            flex-shrink: 0;
+        }
+
+        .highlight-body {
+            text-align: left;
+        }
+
+        .highlight-body strong {
+            display: block;
+            color: #34d399;
+            font-size: 1.15em;
+            margin-bottom: 3px;
+        }
+
+        .highlight-body span {
+            color: #a7c4b5;
+            font-size: 0.96em;
+            line-height: 1.6;
+        }
+
+        .section {
+            margin-bottom: 34px;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+
+        .section-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            height: 34px;
+            background: linear-gradient(135deg, #7c3aed, #a78bfa);
+            border-radius: 10px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.88em;
+            flex-shrink: 0;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            color: #fbbf24;
+            font-size: 1.3em;
+            font-weight: 700;
+        }
+
+        .section p {
+            margin: 12px 0;
+            color: #b8a9d4;
+            font-size: 1em;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin: 18px 0;
+        }
+
+        .info-card {
+            background: rgba(139, 92, 246, 0.05);
+            border: 1px solid rgba(139, 92, 246, 0.1);
+            border-radius: 16px;
+            padding: 20px 22px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .info-card:hover {
+            background: rgba(139, 92, 246, 0.09);
+            border-color: rgba(139, 92, 246, 0.18);
+        }
+
+        .info-card .card-icon {
+            font-size: 26px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .info-card strong {
+            color: #c4b5fd;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.96em;
+        }
+
+        .info-card span {
+            color: #9b8ec4;
+            font-size: 0.9em;
+            line-height: 1.55;
+        }
+
+        .promise-list {
+            list-style: none;
+            padding: 0;
+            margin: 16px 0;
+        }
+
+        .promise-list li {
+            padding: 12px 0 12px 38px;
+            position: relative;
+            color: #b8a9d4;
+            font-size: 0.98em;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.06);
+        }
+
+        .promise-list li:last-child {
+            border-bottom: none;
+        }
+
+        .promise-list li::before {
+            content: "\2714";
+            position: absolute;
+            left: 4px;
+            top: 12px;
+            font-size: 1em;
+            color: #34d399;
+        }
+
+        .note-box {
+            background: rgba(251, 191, 36, 0.05);
+            border: 1px solid rgba(251, 191, 36, 0.15);
+            border-radius: 14px;
+            padding: 20px 24px;
+            margin: 18px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+
+        .note-box .note-icon {
+            font-size: 24px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .note-box p {
+            margin: 0;
+            color: #d4c088;
+            font-size: 0.95em;
+            line-height: 1.65;
+        }
+
+        a {
+            color: #a78bfa;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            color: #c4b5fd;
+            text-decoration: underline;
+        }
+
+        .separator {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.18), transparent);
+            margin: 36px 0;
+        }
+
+        .contact-block {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.06) 0%, rgba(251, 191, 36, 0.03) 100%);
+            border-radius: 20px;
+            border: 1px solid rgba(139, 92, 246, 0.12);
+            margin-top: 34px;
+        }
+
+        .contact-block h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            color: #fbbf24;
+            font-size: 1.15em;
+            margin-bottom: 12px;
+        }
+
+        .contact-block p {
+            margin: 6px 0;
+        }
+
+        .app-store-button {
+            display: inline-block;
+            margin-top: 26px;
+            color: #fff;
+            font-weight: 700;
+            padding: 15px 38px;
+            background: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 40%, #fbbf24 100%);
+            border-radius: 16px;
+            border: none;
+            transition: all 0.25s;
+            box-shadow:
+                0 8px 30px rgba(124, 58, 237, 0.3),
+                0 0 45px rgba(139, 92, 246, 0.06);
+            font-size: 1.05em;
+            letter-spacing: 0.3px;
+        }
+
+        .app-store-button:hover {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow:
+                0 12px 40px rgba(124, 58, 237, 0.45),
+                0 0 60px rgba(139, 92, 246, 0.12);
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .copyright {
+            text-align: center;
+            color: #3d3460;
+            font-size: 0.85em;
+            margin-top: 38px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 32px 22px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .highlight-box {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .highlight-body {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <a href="/index.html" class="back-home">&larr; Back to Home</a>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <span class="header-icon">🔏</span>
+            <h1>Privacy Policy</h1>
+            <p class="header-sub">Find Hidden Mystery</p>
+            <span class="effective-date">Effective Date: March 28, 2026</span>
+        </div>
+
+        <div class="highlight-box">
+            <span class="highlight-icon">✅</span>
+            <div class="highlight-body">
+                <strong>Zero Data Collection</strong>
+                <span>Find Hidden Mystery does not collect, store, or share any personal information from its users. Your puzzle-solving experience remains entirely private.</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">
+                <span class="section-badge">1</span>
+                <h2>About This Policy</h2>
+            </div>
+            <p>This Privacy Policy applies to Find Hidden Mystery ("the Game", "we", "our", or "us"), a spot-the-difference puzzle game available on the Apple App Store. We created this policy to be transparent about how we handle user information — or more accurately, how we do not handle it, because we collect none. Your trust matters to us, and we designed this game with privacy at its foundation.</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">
+                <span class="section-badge">2</span>
+                <h2>Data We Do Not Collect</h2>
+            </div>
+            <p>Find Hidden Mystery is built with a strict no-data-collection approach. We have intentionally chosen not to gather any information from our players. This includes but is not limited to:</p>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <span class="card-icon">🚫</span>
+                    <strong>Personal Details</strong>
+                    <span>No names, email addresses, phone numbers, or any form of personal identification</span>
+                </div>
+                <div class="info-card">
+                    <span class="card-icon">📡</span>
+                    <strong>Location Information</strong>
+                    <span>No GPS coordinates, IP-based geolocation, or regional tracking of any kind</span>
+                </div>
+                <div class="info-card">
+                    <span class="card-icon">📈</span>
+                    <strong>Behavioral Analytics</strong>
+                    <span>No gameplay patterns, session durations, tap heatmaps, or usage statistics</span>
+                </div>
+                <div class="info-card">
+                    <span class="card-icon">🖥️</span>
+                    <strong>Device Information</strong>
+                    <span>No device model, operating system version, advertising identifiers, or hardware fingerprints</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">
+                <span class="section-badge">3</span>
+                <h2>Our Privacy Commitments</h2>
+            </div>
+            <ul class="promise-list">
+                <li>No registration or sign-in is needed to play the game</li>
+                <li>No third-party analytics, tracking, or advertising SDKs are embedded</li>
+                <li>No advertisements that monitor or profile user behavior</li>
+                <li>All game progress and settings remain stored locally on your device</li>
+                <li>No data is transmitted to external servers or shared with third parties</li>
+                <li>No cookies, web beacons, or similar tracking technologies are used</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">
+                <span class="section-badge">4</span>
+                <h2>On-Device Storage</h2>
+            </div>
+            <p>Find Hidden Mystery stores game progress data — such as completed levels, star counts, and your settings — exclusively on your device. This data is never uploaded, synced, or transmitted anywhere. It is accessible only to you and is completely removed if you uninstall the game.</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">
+                <span class="section-badge">5</span>
+                <h2>Third-Party Services</h2>
+            </div>
+            <p>The game operates as a fully self-contained experience. We do not integrate any third-party services, libraries, or frameworks that collect user data. There are no social media logins, external advertising platforms, cloud analytics services, or embedded web content within the game.</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">
+                <span class="section-badge">6</span>
+                <h2>Children's Privacy</h2>
+            </div>
+            <p>Find Hidden Mystery carries a 4+ age rating and is designed to be enjoyed by everyone, including children. Because we collect absolutely no personal data, the game is fully compliant with children's privacy regulations including the Children's Online Privacy Protection Act (COPPA) and similar international laws.</p>
+            <div class="note-box">
+                <span class="note-icon">👪</span>
+                <p>We recommend that parents and guardians review the privacy practices of all applications their children use. While Find Hidden Mystery collects no data, building good digital hygiene habits starts with awareness.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">
+                <span class="section-badge">7</span>
+                <h2>Offline Functionality</h2>
+            </div>
+            <p>After the initial download from the App Store, Find Hidden Mystery works entirely offline. No internet connection is required to play, which further ensures that no data can be inadvertently transmitted from your device while you enjoy the game.</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">
+                <span class="section-badge">8</span>
+                <h2>Updates to This Policy</h2>
+            </div>
+            <p>Should we ever need to revise this Privacy Policy — for example, due to changes in applicable laws or the addition of new features — the updated version will be published on this page with a new effective date. We encourage you to check back periodically, although our core commitment to collecting no data will remain unchanged.</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="contact-block">
+            <h3>Have Questions?</h3>
+            <p>If you have any inquiries regarding this Privacy Policy or the practices of Find Hidden Mystery, please do not hesitate to contact us:</p>
+            <p><a href="mailto:LucertiniPasang609@gmail.com">LucertiniPasang609@gmail.com</a></p>
+
+            <a href="https://apps.apple.com/us/app/find-hidden-mystery/id6753893408?uo=4" class="app-store-button" target="_blank" rel="noopener noreferrer">
+                Download Free on App Store
+            </a>
+        </div>
+
+        <p class="copyright">&copy; 2026 Find Hidden Mystery. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
